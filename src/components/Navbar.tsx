@@ -22,6 +22,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Início', href: '#home' },
+    { name: 'Habilidades', href: '#skills' },
     { name: 'Sobre', href: '#about' },
     { name: 'Projetos', href: '#projects' },
     { name: 'Equipe', href: '#team' },
@@ -44,9 +45,9 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
-            <a key={item.name} href={item.href} className="navbar-item">
+            <a key={item.name} href={item.href} className="navbar-item text-base">
               {item.name}
             </a>
           ))}
